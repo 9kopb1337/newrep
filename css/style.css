@@ -1,0 +1,56 @@
+body {
+    background-color: #efefef;
+}
+
+.header {
+    max-width: 1600px;
+    background-color: white;   
+}
+
+.navigation {
+    font-size: 18px;
+    text-align: center;
+    grid-column-gap: 5px;
+    justify-content: space-between;
+}
+
+.links {
+    align-content: right;
+}
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+    height: auto;
+    background-color: white;
+}
+
+.content {
+    font-size: 26px;
+    text-align: center;
+}
+
+.grid-1 {
+    display: flex;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grid-2 {
+    display: flex;
+}
+
+.img3, img4, img5 {
+    flex: 1 1 40%;
+}
+
+.few-words {
+    text-align: center;
+}
+
