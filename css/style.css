@@ -1,56 +1,131 @@
-body {
-    background-color: #efefef;
+/*Debug*/
+* {
+   /* outline: 0.1px solid red;*/
 }
 
 .header {
-    max-width: 1600px;
-    background-color: white;   
+    outline-color: blue;
+}
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/*General*/
+body {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 20px;
+    background: #eeeff0;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.wrapper {
+    background-color: white;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 70px 80px 0;
 }
 
 .navigation {
-    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+}
+
+.navigation a {
+    color: #000;
+    margin: 0 25px;
+}
+
+.navigation a:hover {
+    opacity: .6;
+}
+
+.navigation a.active {
+    border-bottom: 2px solid #1ec49e;
+    padding-bottom: 5px;
+}
+
+.social-media i {
+    margin: 0 7px;
+}
+
+.social-media i:hover {
+    color: #1ec49e;
+    border-bottom: 2px solid #1ec49e;
+    padding-bottom: 2px;
+}
+
+.content h2 {
+    width: 50%; 
+    font-weight: 300;   
+    margin: 0 auto;
+}
+
+.image-outer {
+    padding: 10px;
+}
+
+.image {
+    background-size: cover;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.image:hover .image-inner {
+    opacity: 1;
+}
+
+.image-inner {
+    padding: 250px 0;
     text-align: center;
-    grid-column-gap: 5px;
-    justify-content: space-between;
+    background: #ffffffcf;
+    opacity: 0;
 }
 
-.links {
-    align-content: right;
+.image-inner h3 {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
 }
 
-.container {
-    max-width: 1600px;
-    margin: auto;
-    height: auto;
-    background-color: white;
+.image-inner div {
+    font-size: 12px;
 }
 
-.content {
-    font-size: 26px;
+.footer {
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+/*Utility*/
+.section-delimeter {
+    margin-bottom: 80px;
+}
+
+.text-center {
     text-align: center;
 }
 
-.grid-1 {
-    display: flex;
+.text-right {
+    text-align: right;
 }
 
-.grow-1 {
-    flex-grow: 1;
+.fade-out {
+    transition: all .3s;
 }
 
-.grow-2 {
-    flex-grow: 2;
+.links-color {
+    color: #1ec49e;
 }
 
-.grid-2 {
-    display: flex;
+.pointer {
+    cursor: pointer;
 }
-
-.img3, img4, img5 {
-    flex: 1 1 40%;
-}
-
-.few-words {
-    text-align: center;
-}
-

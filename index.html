@@ -1,69 +1,129 @@
-<!doctype>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-<!--    <link rel="stylesheet" href="css/style.css"> turned off style for a while -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:300,400" rel="stylesheet"
+        type="text/css">
     <title>First task</title>
 </head>
+
 <body>
-    <div class="container">
-        <header class="header"> <!-- Header consists of 3 blocks -->
-            <div class="logo">  <!-- Logo block-->
-                <img class="mountain" src="assets/brand-nav.png" alt="logo">
+    <div class="wrapper">
+        <header class="header grid section-delimeter">
+            <!-- Header consists of 3 blocks -->
+            <div class="pointer logo col-1-4">
+                <!-- Logo block-->
+                <img src="assets/brand-nav.png" alt="logo">
             </div>
-            <nav class="navigation"> <!-- Nav Block-->               
-                    <a href="index.html">Work</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="contacts.html">Contacts</a>
+            <nav class="navigation col-1-2 text-center">
+                <!-- Nav Block-->
+                <a href="index.html" class="active fade-out">Work</a>
+                <a href="about.html" class="fade-out">About</a>
+                <a href="services.html" class="fade-out">Services</a>
+                <a href="contacts.html" class="fade-out">Contacts</a>
             </nav>
-            <div class="social-media"> <!-- Social media links block-->
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-globe" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+            <div class="social-media  col-1-4 text-right">
+                <!-- Social media links block-->
+                <i class="pointer fa fa-twitter" aria-hidden="true"></i>
+                <i class="pointer fa fa-globe" aria-hidden="true"></i>
+                <i class="pointer fa fa-instagram" aria-hidden="true"></i>
             </div>
         </header>
         <section>
-            <div class="content">
-                <p>We are web agency based in London &amp we<br>love functional &amp meaningful design.</p>
+            <div class="content text-center section-delimeter">
+                <h2>We are web agency based in London &amp we love functional &amp meaningful design.</h2>
             </div>
-            <div class="imgs">  <!-- I dunno how many blocks must be here -->
-                <div class="row-1"> <!-- First row with 2 images-->
-                    <p>Картинка 1</p>
-                    <p>Картинка 2</p>
+            <div class="images section-delimeter">
+                <!-- I dunno how many blocks must be here -->
+                <div class="grid">
+                    <div class="image-outer col-1-2">
+                        <div class="image" style="background-image: url('assets/work-1.jpg');">
+                            <div class="image-inner fade-out">
+                                <h3>Don't Just Stand There</h3>
+                                <div>Print Illuminate</div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="image-outer col-1-2">
+                        <div class="image" style="background-image: url('assets/work-2.jpg');">
+                            <div class="image-inner fade-out">
+                                <h3>Don't Just Stand There</h3>
+                                <div>Print Illuminate</div>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
-                <div class="row-2"> <!-- Second row with 2 images-->
-                    <p>Картинка 3</p>
-                    <p>Картинка 4</p>
+                <div class="grid">
+                    <div class="image-outer col-2-3">
+                        <div class="image" style="background-image: url('assets/work-3.jpg');">
+                            <div class="image-inner fade-out">
+                                <h3>Don't Just Stand There</h3>
+                                <div>Print Illuminate</div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="image-outer col-1-3">
+                        <div class="image" style="background-image: url('assets/work-4.jpg');">
+                            <div class="image-inner fade-out">
+                                <h3>Don't Just Stand There</h3>
+                                <div>Print Illuminate</div>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
-                <div class="row-3"> <!-- Third row with 1 image-->
-                    <p>Картинка 5</p>
+                <div class="grid">
+                    <div class="image-outer col-1-1">
+                        <div class="image" style="background-image: url('assets/work-5.jpg');">
+                            <div class="image-inner fade-out">
+                                <h3>Don't Just Stand There</h3>
+                                <div>Print Illuminate</div>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="few-words"> <!-- Block under images consists of 3 blocks-->
-                <div class="brand-identity">
+            <div class="few-words grid section-delimeter">
+                <!-- Block under images consists of 3 blocks-->
+                <div class="brand-identity col-1-3 text-center">
+                    <div>
+                        <i class="links-color fa fa-superpowers" aria-hidden="true"></i>
+                    </div>
                     <h3>Brand Identity</h3>
-                    <p>Far far away, begind the word<br>mountains, farm from the countries<br>Vokalia and Consomantia.</p>
+                    <div>Far far away, begind the word mountains, farm from the countries Vokalia and Consomantia.
+                    </div>
                 </div>
-                <div class="web-design">
+                <div class="web-design col-1-3 text-center">
+                    <div>
+                        <i class="links-color fa fa-lightbulb-o" aria-hidden="true"></i>
+                    </div>
                     <h3>Web Design &amp UI</h3>
-                    <p>Far far away, begind the word<br>mountains, farm from the countries<br>Vokalia and Consomantia.</p>
+                    <div>Far far away, begind the word mountains, farm from the countries Vokalia and Consomantia.
+                    </div>
                 </div>
-                <div class="cms">
+                <div class="cms col-1-3 text-center">
+                    <div>
+                        <i class="links-color fa fa-anchor" aria-hidden="true"></i>
+                    </div>
                     <h3>Development &amp CMS</h3>
-                    <p>Far far away, begind the word<br>mountains, farm from the countries<br>Vokalia and Consomantia.</p>
+                    <div>Far far away, begind the word mountains, farm from the countries Vokalia and Consomantia.
+                    </div>
                 </div>
             </div>
         </section>
-        <footer> <!-- Footer consists of 2 blocks - Rights reserved and Designed by -->
-            <div class="rights-reserved">
-                <p>CLOSEST FREE HTML5. ALL RIGHTS RESERVED.</p>
+        <footer class="grid footer">
+            <!-- Footer consists of 2 blocks - Rights reserved and Designed by -->
+
+            <div class="rights-reserved col-1-2">
+                <div>CLOSEST FREE HTML5. ALL RIGHTS RESERVED.</div>
             </div>
-            <div class="designed-by">
-                <p>DESIGNED BY <a href="#">FREEHTML5.CO</a> IMAGES: <a href="#">UNSPLASH</a></p>
+            <div class="designed-by text-right col-1-2">
+                <div>DESIGNED BY <a href="#" class="links-color">FREEHTML5.CO</a> IMAGES: <a href="#" class="links-color">UNSPLASH</a></div>
             </div>
         </footer>
     </div>
 </body>
+
 </html>
